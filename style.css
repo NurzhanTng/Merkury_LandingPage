@@ -1,29 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 
-/* General style */
+
+/*____General style____*/
 
 body {
     padding: 0;
     margin: 0;
 
-    background: #000;
+    background: #fff;
     font-family: 'Roboto';
+    color: #000;
 }
 
-a {
+a, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 0;
 
     text-decoration: none;
 }
 
-/* Header */
+
+/*____Header____*/
 
 .header {
     margin: auto;
-    padding: 0 50px;
+    margin: 0 20px;
+
     max-width: 1700px;
     height: 200px;
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1000;
 
     display: flex;
     justify-content: space-between;
@@ -57,7 +66,69 @@ a {
 
     border: solid 2px #5585ffbe;
     border-radius: 40px;
-    
     color: #5584ff;
 }
+
+
+/*____Home____*/
+
+.home {
+    padding: 266px 20px 0px 20px;
+
+    height: 834px;
+    background: url(img/Home_background.png) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.home-title {
+    margin-bottom: 5px;
+
+    font: 100 60px 'Roboto', Arial, sans-serif;
+    color: #fff;
+}
+
+.home-subtitle {
+    margin-bottom: 95px;
+
+    font: 400 36px 'Roboto', Arial, sans-serif;
+    color: #8492af;
+}
+
+.home-startbutton {
+    padding: 10px 55px;
+    
+    background: #5584ff;
+    border-radius: 100px;
+    font: 700 18px 'Roboto', Arial, sans-serif;
+    color: #fff;
+}
+
+.home-dashboard-image {
+    z-index: 1000;
+}
+
+.home-dashboard {
+    position: absolute;
+    top: 606px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.home-dashboard-effect {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 493px;
+    width: 882px;
+    box-shadow:0 0 70px #152750;
+    border-bottom: none;
+    clip-path: inset(-90px -90px 0 -90px);
+}
+
+
+/*____Icon Features____*/
 
