@@ -31,7 +31,7 @@ a, h1, h2, h3, h4, h5, h6, p {
     width: calc(100% - 40px);
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(calc(-50% - 20px), 0);
     z-index: 1000;
 
     display: flex;
@@ -132,3 +132,62 @@ a, h1, h2, h3, h4, h5, h6, p {
 
 /*____Icon Features____*/
 
+.icon-features {
+    margin: 260px auto 0px;
+    max-width: 1400px;
+    height: 700px;
+}
+
+.icons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 30%;
+    text-align: center;
+}
+
+.icon-image {
+    margin-bottom: 45px;
+}
+
+.icon-title {
+    margin-bottom: 15px;
+
+    font: 700 24px 'Roboto', Arial, sans-serif;
+}
+
+.icon-text {
+    margin-bottom: 55px;
+
+    max-width: 400px;
+    font: 400 18px 'Roboto', Arial, sans-serif;
+    color: #8492af;
+}
+
+.icon-morebutton {
+    padding: 15px 85px;
+
+    border: solid 1px #dadee7;
+    border-radius: 100px;
+    font: 700 18px 'Roboto', Arial, sans-serif;
+    color: #000;
+}
+
+.icon-line {
+    top: 33px;
+
+    position: absolute;
+    width: 220px;
+    border-bottom: solid 1px #dadee7;
+}
+
+.line-1 {
+    left: calc(32.5% - 110px);
+}
+
+.line-2 {
+    left: calc(67.5% - 110px);
+}
