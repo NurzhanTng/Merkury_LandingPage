@@ -135,7 +135,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 .icon-features {
     margin: 260px auto 0px;
     max-width: 1400px;
-    height: 700px;
+    height: 490px;
 }
 
 .icons {
@@ -190,4 +190,51 @@ a, h1, h2, h3, h4, h5, h6, p {
 
 .line-2 {
     left: calc(67.5% - 110px);
+}
+
+/*____You need Screen____*/
+
+.you-need-screen {
+    height: 850px;
+    background-color: #f6f7fa;
+    position: relative;
+    overflow: hidden;
+    box-shadow:0 0 80px #f6f7fa;
+    border-bottom: none;
+    /* clip-path: inset(-180px 0 0 0); */
+}
+
+.you-need-content {
+    padding-top: 175px;
+    margin: auto;
+    max-width: 1400px;
+    z-index: 1000;
+}
+
+.you-need-title {
+    margin: 0;
+    margin-bottom: 35px;
+    font: 100 60px 'Roboto', Arial, sans-serif;
+    color: #0e1a35;
+}
+
+.you-need-text {
+    margin: 0;
+    margin-bottom: 30px;
+    font: 400 18px 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+    width: 580px;
+    color: #bdc4d4;
+    z-index: 1000;
+}
+
+.text2 {
+    margin-bottom: 50px;
+}
+
+.you-need-background {
+    position: absolute;
+    top: 100px;
+    left: calc(100% - 1050px);
+    z-index: 0;
 }
