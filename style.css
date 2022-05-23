@@ -199,9 +199,9 @@ a, h1, h2, h3, h4, h5, h6, p {
     background-color: #f6f7fa;
     position: relative;
     overflow: hidden;
-    box-shadow:0 0 80px #f6f7fa;
+    box-shadow:0 0 150px #f1f1f4;
     border-bottom: none;
-    /* clip-path: inset(-180px 0 0 0); */
+    clip-path: inset(-180px 0 0 0);
 }
 
 .you-need-content {
@@ -237,4 +237,76 @@ a, h1, h2, h3, h4, h5, h6, p {
     top: 100px;
     left: calc(100% - 1050px);
     z-index: 0;
+}
+
+/*____Workflow Screen____*/
+
+.workflow-screen {
+    padding: 0 80px;
+    height: 750px;
+
+    display: flex;
+    overflow: hidden;
+
+    background: url(img/Home_background.png) no-repeat;
+    background-position: 0 -105px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.workflow-background {
+    padding-top: 105px;
+    margin-right: 110px;
+}
+
+.workflow-content-wrapper {
+    padding-top: 210px;
+    margin-bottom: 40px;
+}
+
+.workflow-title {
+    margin-bottom: 40px;
+    color: #fff;
+    font: 100 60px 'Roboto', Arial, sans-serif;
+}
+
+.workflow-text {
+    margin: 0;
+    margin-bottom: 30px;
+    
+    color: #8492af;
+    font: 400 18px 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.arrows {
+    display: flex;
+
+}
+
+.arrow {
+    position: relative;
+    margin-right: 18px;
+
+    height: 35px;
+    width: 35px;
+    border: 1px solid #9da6bb;
+    border-radius: 100%;
+}
+
+.arrow::after {
+    content: ''; 
+    position: absolute; 
+    top: 10px;
+    border: 8px solid transparent;
+}
+
+.arrow-left::after {
+    left: 2px;
+    border-right: 11px solid #9da6bb;
+}
+
+.arrow-rigth::after {
+    right: 2px;
+    border-left: 11px solid #9da6bb;
 }
