@@ -262,6 +262,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 .workflow-content-wrapper {
     padding-top: 210px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .workflow-title {
@@ -309,4 +310,125 @@ a, h1, h2, h3, h4, h5, h6, p {
 .arrow-rigth::after {
     right: 2px;
     border-left: 11px solid #9da6bb;
+}
+
+/*____PSD Template Screen____*/
+
+.psd-template-screen {
+    background-color: #f6f7fa;
+    box-shadow:0 0 150px #f1f1f4;
+    border-bottom: none;
+    clip-path: inset(0 0 -180px 0);
+}
+
+.psd-template-wrapper {
+    margin: auto;
+    padding-top: 90px; 
+
+    height: 960px;
+    max-width: 1400px;
+}
+
+.psd-template-title {
+    margin-bottom: 55px;
+
+    font: 100 60px 'Roboto', Arial, sans-serif;
+    color: #0e1a35;
+    text-align: center;
+}
+
+.psd-template-alltext {
+    font: 400 18px 'Roboto', Arial, sans-serif;
+    line-height: 1.8;
+    width: 1000px;
+    color: #8492af;
+}
+
+.psd-template-text {
+    text-align: center;
+}
+
+.psd-template-text-margin {
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+.psd-template-content {
+    padding-top: 80px;
+    height: 620px;
+    background: url(img/Screen_Mockup.png) no-repeat;
+    background-position: 84px 0;
+    background-size: 1218px 681px;
+}
+
+.psd-template-element {
+    position: relative;
+    width: 300px;
+}
+
+.element1 {
+    margin-bottom: 140px;
+}
+
+.element2 {
+    margin-left: auto;
+}
+
+.psd-template-element-title {
+    margin-bottom: 37px;    
+    position: relative;
+    font: 700 24px 'Roboto', Arial, sans-serif;
+}
+
+.psd-template-element-text {
+    width: 240px;
+}
+
+.text-right, .title-right {
+    text-align: end;
+    margin-left: auto;
+}
+
+.psd-template-element-title::after {
+    content: '';
+    position: absolute;
+    width: 650px;
+    height: 0px;
+    top: 46px;
+    border-top: 2px solid #5584ff;
+}
+
+.title-left::after {
+    left: 0;
+}
+
+.title-right::after {
+    right: 0;
+}
+
+.psd-template-element-circle, .psd-template-element-circle::after {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.psd-template-element-circle {
+    width: 30px; 
+    height: 30px;
+    top: 32px;
+    left: 635px;
+    background: #5584ff;
+}
+
+.circle-right {
+    left: auto;
+    right: 635px;
+}
+
+.psd-template-element-circle::after {
+    content: '';
+    top: -8px;
+    left: -8px;
+    width: 46px; 
+    height: 46px;
+    background: #5585ffc2;
 }
