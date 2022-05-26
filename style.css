@@ -609,3 +609,42 @@ a, h1, h2, h3, h4, h5, h6, p {
 .pricing-join-button::after {
     left: 218px;
 }
+
+/*____Footer____*/
+
+.footer {
+    padding: 0px 260px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c1528;
+}
+
+.footer-right, .footer-nav-link {
+    color: #8492af;
+}
+
+.footer-right {
+    height: fit-content;
+    margin: auto 0;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav-links {
+    margin-right: 10px;
+}
+
+.footer-nav-link {
+    padding: 20px 24px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-nav-social-link {
+    padding: 8px;
+}
