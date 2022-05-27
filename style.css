@@ -229,7 +229,7 @@ a, h1, h2, h3, h4, h5, h6, p {
 }
 
 .text2 {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
 }
 
 .you-need-background {
@@ -237,6 +237,62 @@ a, h1, h2, h3, h4, h5, h6, p {
     top: 100px;
     left: calc(100% - 1050px);
     z-index: 0;
+}
+
+.feature {
+    margin-bottom: 18px;
+    position: relative;
+
+    font: 400 18px 'Roboto', Arial, sans-serif;
+    color: #8492af;
+}
+
+.feature-enabled, .feature-disabled {
+    margin-left: 90px;
+    text-align: start;
+}
+
+.you-need-feature-enabled {
+    margin-left: 45px;
+    color: #5788ff;
+    font-size: 22px;
+}
+
+.you-need-feature-enabled::before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 24px;
+
+    border-radius: 100%;
+}
+
+.you-need-feature-enabled::before {
+    border: 3px solid #5788ff;
+    left: -45px;
+}
+
+.enabled-figure2::after, .enabled-figure2::before{
+    position: absolute;
+    content: '';
+    background-color: #5788ff;
+    border-radius: 2px;
+}
+
+.enabled-figure2::after {
+    top: 13px;
+    left: -35px;
+    height: 2px;
+    width: 10px;
+    transform: rotate(-45deg);
+}
+
+.enabled-figure2::before {
+    top: 14px;
+    left: -37px;
+    height: 2px;
+    width: 6px;
+    transform: rotate(45deg);
 }
 
 /*____Workflow Screen____*/
@@ -485,14 +541,6 @@ a, h1, h2, h3, h4, h5, h6, p {
     color: #8492af;
 }
 
-.feature {
-    margin-bottom: 18px;
-    position: relative;
-
-    font: 400 18px 'Roboto', Arial, sans-serif;
-    color: #8492af;
-}
-
 .feature-enabled, .feature-disabled {
     margin-left: 90px;
     text-align: start;
@@ -647,4 +695,33 @@ a, h1, h2, h3, h4, h5, h6, p {
 
 .footer-nav-social-link {
     padding: 8px;
+}
+
+/*____Animation____*/
+
+.header-nav-link:hover, .footer-nav-link:hover {
+    text-decoration: underline;
+}
+
+.header-nav-login:hover {
+    text-decoration: none;
+}
+
+.header-nav-login, .home-startbutton, .icon-morebutton, .pricing-join-button {
+    transition: background 0.2s ease-in;
+}
+
+.header-nav-login:hover {
+    background-color: #5585ff;
+    color: #fff;
+}
+
+.pricing-join-button:hover, .home-startbutton:hover {
+    background-color: #3f65c4;
+}
+
+.icon-morebutton:hover {
+    border-color: transparent;
+    background-color: #5585ff;
+    color: #fff;
 }

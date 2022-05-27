@@ -3,7 +3,11 @@ const features_disabled = document.querySelectorAll('.disabled');
 
 for (feature of features_enabled) {
     const check = document.createElement('div');
-    check.classList.add('enabled-figure');
+    if (feature.classList.contains('you-need-feature-enabled')) {
+        check.classList.add('enabled-figure2');
+    } else {
+        check.classList.add('enabled-figure');
+    }
     feature.append(check);
 }
 
